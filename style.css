@@ -97,13 +97,36 @@ h1 span { color: var(--primary); }
 body.high-contrast, body.high-contrast *:not(i):not(.icon) {
     background-color: #000 !important;
     color: #fff !important;
-    border: 1px solid #ff0 !important;
+    border: 1px solid rgb(102, 212, 144) !important;
     background-image: none !important;
     box-shadow: none !important;
     text-shadow: none !important;
 }
 body.high-contrast a, body.high-contrast button {
-    color: #ff0 !important;
-    text-decoration: underline !important;
+    color: rgb(113, 175, 98) !important;
+    text-decoration: un￼
+quero um fundo com uma animação
+
+￼
+
+￼
+Sonnet 4.6 Baixo
+
+￼
+
+￼
+
+derline !important;
     font-weight: bold !important;
-}
+}￼
+quero um fundo com uma animação
+
+￼
+
+￼
+Sonnet 4.6 Baixo
+
+￼
+
+￼
+
