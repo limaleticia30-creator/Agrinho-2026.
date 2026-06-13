@@ -1,1 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agro do Futuro 2050</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<section class="hero">
+
+  <svg class="sky-bg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="skyGrad" cx="50%" cy="0%" r="80%">
+        <stop offset="0%" stop-color="#0a1f0a"/>
+        <stop offset="40%" stop-color="#021408"/>
+        <stop offset="100%" stop-color="#000"/>
+      </radialGradient>
+      <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#c8ffd4" stop-opacity="0.15"/>
+        <stop offset="100%" stop-color="transparent"/>
+      </radialGradient>
+      <radialGradient id="cityGlow" cx="50%" cy="100%" r="60%">
+        <stop offset="0%" stop-color="#00e676" stop-opacity="0.18"/>
+        <stop offset="100%" stop-color="transparent"/>
+      </radialGradient>
+      <filter id="blur4">
+        <feGaussianBlur stdDeviation="4"/>
+      </filter>
+      <filter id="blur8">
+        <feGaussianBlur stdDeviation="8"/>
+      </filter>
+      <linearGradient id="plantGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#00c853"/>
+        <stop offset="100%" stop-color="#004d20"/>
+      </linearGradient>
+      <linearGradient id="glowLine" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#00e676" stop-opacity="0.7"/>
+        <stop offset="100%" stop-color="#00e676" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="fieldBase" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#003018"/>
+        <stop offset="100%" stop-color="#001a0d"/>
+      </linearGradient>
+    </defs>
+
+    <rect width="1440" height="900" fill="url(#skyGrad)"/>
+
+    <circle cx="1200" cy="100" r="55" fill="#c8ffd4" opacity="0.08"/>
+    <circle cx="1200" cy="100" r="40" fill="#d4ffe0" opacity="0.12"/>
+    <circle cx="1200" cy="100" r="140" fill="url(#moonGlow)"/>
+
+    <ellipse cx="200" cy="120" rx="200" ry="60" fill="#00e676" opacity="0.025" filter="url(#blur8)"/>
+    <ellipse cx="900" cy="80" rx="300" ry="50" fill="#69f0ae" opacity="0.02" filter="url(#blur8)"/>
+
+    <g opacity="0.7">
+      <circle cx="80" cy="60" r="1.5" fill="#fff"/>
+      <circle cx="180" cy="30" r="1" fill="#c8ffd4"/>
+      <circle cx="320" cy="80" r="1.5" fill="#fff"/>
+      <circle cx="450" cy="20" r="1" fill="#fff"/>
+      <circle cx="600" cy="55" r="2" fill="#b2ff59" opacity="0.8"/>
+      <circle cx="700" cy="30" r="1" fill="#fff"/>
+      <circle cx="820" cy="70" r="1.5" fill="#fff"/>
+      <circle cx="950" cy="15" r="1" fill="#c8ffd4"/>
+      <circle cx="1050" cy="50" r="2" fill="#fff"/>
+      <circle cx="1100" cy="25" r="1" fill="#fff"/>
+      <circle cx="1280" cy="65" r="1.5" fill="#fff"/>
+      <circle cx="1380" cy="40" r="1" fill="#c8ffd4"/>
+      <circle cx="130" cy="140" r="1" fill="#fff"/>
+      <circle cx="380" cy="150" r="1.5" fill="#fff"/>
+      <circle cx="540" cy="130" r="1" fill="#c8ffd4"/>
+      <circle cx="760" cy="110" r="1.5" fill="#fff"/>
+      <circle cx="1150" cy="130" r="1" fill="#fff"/>
+      <circle cx="1320" cy="120" r="1.5" fill="#b2ff59" opacity="0.7"/>
+    </g>
+
+    <g opacity="0.6">
+      <rect x="100" y="520" width="8" height="80" fill="#004d1a" rx="2"/>
+      <rect x="115" y="500" width="12" height="100" fill="#005c20" rx="2"/>
+      <rect x="135" y="490" width="6" height="110" fill="#004d1a" rx="2"/>
+      <rect x="600" y="480" width="10" height="120" fill="#005c20" rx="2"/>
+      <rect x="618" y="460" width="16" height="140" fill="#006629" rx="2"/>
+      <rect x="642" y="490" width="8" height="110" fill="#004d1a" rx="2"/>
+      <rect x="1200" y="500" width="12" height="100" fill="#005c20" rx="2"/>
+      <rect x="1220" y="470" width="18" height="130" fill="#006629" rx="2"/>
+      <rect x="1245" y="510" width="8" height="90" fill="#004d1a" rx="2"/>
+      <ellipse cx="720" cy="600" rx="90" ry="40" fill="none" stroke="#00e676" stroke-width="1" opacity="0.25"/>
+      <ellipse cx="720" cy="600" rx="90" ry="40" fill="#001f0d" opacity="0.4"/>
+      <line x1="618" y1="460" x2="618" y2="440" stroke="#00e676" stroke-width="1" opacity="0.5"/>
+      <circle cx="618" cy="438" r="2" fill="#00e676" opacity="0.8"/>
+      <line x1="1229" y1="470" x2="1229" y2="445" stroke="#00e676" stroke-width="1" opacity="0.5"/>
+      <circle cx="1229" cy="443" r="2" fill="#69f0ae" opacity="0.7"/>
+    </g>
+
+    <ellipse cx="720" cy="900" rx="500" ry="300" fill="url(#cityGlow)"/>
+
+    <rect x="0" y="590" width="1440" height="310" fill="url(#fieldBase)"/>
+
+    <g opacity="0.5" stroke="#00c853" stroke-width="0.8" fill="none">
+      <line x1="0" y1="610" x2="1440" y2="610"/>
+      <line x1="0" y1="630" x2="1440" y2="630"/>
+      <line x1="0" y1="655" x2="1440" y2="655"/>
+      <line x1="0" y1="685" x2="1440" y2="685"/>
+      <line x1="0" y1="720" x2="1440" y2="720"/>
+      <line x1="0" y1="762" x2="1440" y2="762"/>
+      <line x1="0" y1="810" x2="1440" y2="810"/>
+      <line x1="0" y1="870" x2="1440" y2="870"/>
+    </g>
+
+    <g opacity="0.35" stroke="#00e676" stroke-width="0.6" fill="none">
+      <line x1="720" y1="588" x2="0" y2="900"/>
+      <line x1="720" y1="588" x2="240" y2="900"/>
+      <line x1="720" y1="588" x2="480" y2="900"/>
+      <line x1="720" y1="588" x2="720" y2="900"/>
+      <line x1="720" y1="588" x2="960" y2="900"/>
+      <line x1="720" y1="588" x2="1200" y2="900"/>
+      <line x1="720" y1="588" x2="1440" y2="900"/>
+    </g>
+
+    <g opacity="0.4">
+      <line x1="720" y1="588" x2="0" y2="900" stroke="url(#glowLine)" stroke-width="1.5"/>
+      <line x1="720" y1="588" x2="720" y2="900" stroke="url(#glowLine)" stroke-width="2"/>
+      <line x1="720" y1="588" x2="1440" y2="900" stroke="url(#glowLine)" stroke-width="1.5"/>
+    </g>
+
+    <g transform="translate(0,600)" opacity="0.7">
+      <g transform="translate(60,0)">
+        <rect x="0" y="4" width="4" height="12" fill="#004d1a" rx="2"/>
+        <ellipse cx="2" cy="4" rx="6" ry="4" fill="#00a152"/>
+        <line x1="2" y1="10" x2="-4" y2="6" stroke="#00c853" stroke-width="0.7"/>
+        <line x1="2" y1="8" x2="6" y2="5" stroke="#00c853" stroke-width="0.7"/>
+      </g>
+      <g transform="translate(200,0)"><rect x="0" y="4" width="4" height="12" fill="#004d1a" rx="2"/><ellipse cx="2" cy="4" rx="6" ry="4" fill="#00b359"/><line x1="2" y1="10" x2="-4" y2="6" stroke="#00c853" stroke-width="0.7"/><line x1="2" y1="8" x2="6" y2="5" stroke="#00c853" stroke-width="0.7"/></g>
+      <g transform="translate(350,0)"><rect x="0" y="4" width="4" height="12" fill="#004d1a" rx="2"/><ellipse cx="2" cy="4" rx="6" ry="4" fill="#00a152"/><line x1="2" y1="10" x2="-4" y2="6" stroke="#00c853" stroke-width="0.7"/></g>
+      <g transform="translate(500,0)"><rect x="0" y="4" width="4" height="12" fill="#004d1a" rx="2"/><ellipse cx="2" cy="4" rx="6" ry="4" fill="#00c853"/></g>
+      <g transform="translate(700,0)"><rect x="0" y="4" width="4" height="12" fill="#004d1a" rx="2"/><ellipse cx="2" cy="4" rx="6" ry="4" fill="#00a152"/><line x1="2" y1="10" x2="-4" y2="6" stroke="#00c853" stroke-width="0.7"/></g>
+      <g transform="translate(900,0)"><rect x="0" y="4" width="4" height="12" fill="#004d1a" rx="2"/><ellipse cx="2" cy="4" rx="6" ry="4" fill="#00b359"/></g>
+      <g transform="translate(1100,0)"><rect x="0" y="4" width="4" height="12" fill="#004d1a" rx="2"/><ellipse cx="2" cy="4" rx="6" ry="4" fill="#00c853"/><line x1="2" y1="8" x2="6" y2="5" stroke="#00c853" stroke-width="0.7"/></g>
+      <g transform="translate(1300,0)"><rect x="0" y="4" width="4" height="12" fill="#004d1a" rx="2"/><ellipse cx="2" cy="4" rx="6" ry="4" fill="#00a152"/></g>
+    </g>
+
+    <g transform="translate(0,640)" opacity="0.85">
+      <g transform="translate(30,0)"><rect x="0" y="5" width="5" height="18" fill="#004d1a" rx="2"/><ellipse cx="2.5" cy="5" rx="9" ry="6" fill="#00b359"/><line x1="2.5" y1="14" x2="-7" y2="8" stroke="#00c853" stroke-width="1"/><line x1="2.5" y1="10" x2="9" y2="6" stroke="#00c853" stroke-width="1"/></g>
+      <g transform="translate(180,0)"><rect x="0" y="5" width="5" height="18" fill="#004d1a" rx="2"/><ellipse cx="2.5" cy="5" rx="9" ry="6" fill="#00c853"/><line x1="2.5" y1="14" x2="-7" y2="8" stroke="#00e676" stroke-width="1"/></g>
+      <g transform="translate(370,0)"><rect x="0" y="5" width="5" height="18" fill="#004d1a" rx="2"/><ellipse cx="2.5" cy="5" rx="9" ry="6" fill="#00a152"/></g>
+      <g transform="translate(560,0)"><rect x="0" y="5" width="5" height="18" fill="#004d1a" rx="2"/><ellipse cx="2.5" cy="5" rx="9" ry="6" fill="#00b359"/><line x1="2.5" y1="10" x2="9" y2="6" stroke="#00c853" stroke-width="1"/></g>
+      <g transform="translate(750,0)"><rect x="0" y="5" width="5" height="18" fill="#004d1a" rx="2"/><ellipse cx="2.5" cy="5" rx="9" ry="6" fill="#00c853"/><line x1="2.5" y1="14" x2="-7" y2="8" stroke="#00e676" stroke-width="1"/><line x1="2.5" y1="10" x2="9" y2="6" stroke="#69f0ae" stroke-width="1"/></g>
+      <g transform="translate(950,0)"><rect x="0" y="5" width="5" height="18" fill="#004d1a" rx="2"/><ellipse cx="2.5" cy="5" rx="9" ry="6" fill="#00a152"/></g>
+      <g transform="translate(1150,0)"><rect x="0" y="5" width="5" height="18" fill="#004d1a" rx="2"/><ellipse cx="2.5" cy="5" rx="9" ry="6" fill="#00b359"/></g>
+      <g transform="translate(1350,0)"><rect x="0" y="5" width="5" height="18" fill="#004d1a" rx="2"/><ellipse cx="2.5" cy="5" rx="9" ry="6" fill="#00c853"/><line x1="2.5" y1="14" x2="-7" y2="8" stroke="#00c853" stroke-width="1"/></g>
+    </g>
+
+    <g transform="translate(0,695)" opacity="1">
+      <g transform="translate(0,0)"><rect x="0" y="6" width="7" height="28" fill="#003d16" rx="3"/><ellipse cx="3.5" cy="6" rx="13" ry="9" fill="#00a152"/><line x1="3.5" y1="18" x2="-10" y2="11" stroke="#00c853" stroke-width="1.2"/><line x1="3.5" y1="14" x2="12" y2="9" stroke="#00c853" stroke-width="1.2"/></g>
+      <g transform="translate(130,0)"><rect x="0" y="6" width="7" height="28" fill="#003d16" rx="3"/><ellipse cx="3.5" cy="6" rx="13" ry="9" fill="#00c853"/><line x1="3.5" y1="18" x2="-10" y2="11" stroke="#69f0ae" stroke-width="1.2"/></g>
+      <g transform="translate(290,0)"><rect x="0" y="6" width="7" height="28" fill="#003d16" rx="3"/><ellipse cx="3.5" cy="6" rx="13" ry="9" fill="#00b359"/><line x1="3.5" y1="14" x2="12" y2="9" stroke="#00e676" stroke-width="1.2"/></g>
+      <g transform="translate(460,0)"><rect x="0" y="6" width="7" height="28" fill="#003d16" rx="3"/><ellipse cx="3.5" cy="6" rx="13" ry="9" fill="#00a152"/></g>
+      <g transform="translate(640,0)"><rect x="0" y="6" width="7" height="28" fill="#003d16" rx="3"/><ellipse cx="3.5" cy="6" rx="15" ry="10" fill="#00c853"/><line x1="3.5" y1="18" x2="-11" y2="12" stroke="#b2ff59" stroke-width="1.5"/><line x1="3.5" y1="14" x2="13" y2="9" stroke="#b2ff59" stroke-width="1.5"/></g>
+      <g transform="translate(830,0)"><rect x="0" y="6" width="7" height="28" fill="#003d16" rx="3"/><ellipse cx="3.5" cy="6" rx="13" ry="9" fill="#00b359"/></g>
+      <g transform="translate(1010,0)"><rect x="0" y="6" width="7" height="28" fill="#003d16" rx="3"/><ellipse cx="3.5" cy="6" rx="13" ry="9" fill="#00a152"/><line x1="3.5" y1="18" x2="-10" y2="11" stroke="#00c853" stroke-width="1.2"/></g>
+      <g transform="translate(1200,0)"><rect x="0" y="6" width="7" height="28" fill="#003d16" rx="3"/><ellipse cx="3.5" cy="6" rx="13" ry="9" fill="#00c853"/><line x1="3.5" y1="14" x2="12" y2="9" stroke="#69f0ae" stroke-width="1.2"/></g>
+      <g transform="translate(1380,0)"><rect x="0" y="6" width="7" height="28" fill="#003d16" rx="3"/><ellipse cx="3.5" cy="6" rx="13" ry="9" fill="#00b359"/></g>
+    </g>
+
+    <g opacity="0.7">
+      <circle cx="150" cy="730" r="4" fill="#00e676" opacity="0.6"/>
+      <circle cx="150" cy="730" r="8" fill="none" stroke="#00e676" stroke-width="0.8" opacity="0.3"/>
+      <line x1="150" y1="730" x2="150" y2="710" stroke="#00e676" stroke-width="0.8" stroke-dasharray="3,2"/>
+      <circle cx="450" cy="755" r="4" fill="#69f0ae" opacity="0.6"/>
+      <circle cx="450" cy="755" r="8" fill="none" stroke="#69f0ae" stroke-width="0.8" opacity="0.3"/>
+      <line x1="450" y1="755" x2="450" y2="735" stroke="#69f0ae" stroke-width="0.8" stroke-dasharray="3,2"/>
+      <circle cx="800" cy="748" r="4" fill="#b2ff59" opacity="0.6"/>
+      <circle cx="800" cy="748" r="8" fill="none" stroke="#b2ff59" stroke-width="0.8" opacity="0.3"/>
+      <circle cx="1100" cy="762" r="4" fill="#00e676" opacity="0.6"/>
+      <circle cx="1100" cy="762" r="8" fill="none" stroke="#00e676" stroke-width="0.8" opacity="0.3"/>
+      <line x1="1100" y1="762" x2="1100" y2="742" stroke="#00e676" stroke-width="0.8" stroke-dasharray="3,2"/>
+    </g>
+
+    <g transform="translate(980, 700)" opacity="0.8">
+      <rect x="0" y="30" width="10" height="25" fill="#002d10" rx="2"/>
+      <rect x="-5" y="20" width="20" height="14" fill="#003d16" rx="3"/>
+      <line x1="10" y1="27" x2="28" y2="15" stroke="#00c853" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="28" y1="15" x2="42" y2="24" stroke="#00c853" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="28" cy="15" r="3.5" fill="#00e676" opacity="0.8"/>
+      <circle cx="42" cy="24" r="3" fill="#69f0ae"/>
+      <rect x="38" y="21" width="8" height="6" fill="#004d1a" rx="1"/>
+    </g>
+
+    <g transform="translate(230, 720)" opacity="0.75">
+      <rect x="0" y="0" width="40" height="25" fill="#01579b" rx="3" stroke="#0288d1" stroke-width="0.5"/>
+      <line x1="0" y1="8" x2="40" y2="8" stroke="#039be5" stroke-width="0.4"/>
+      <line x1="0" y1="16" x2="40" y2="16" stroke="#039be5" stroke-width="0.4"/>
+      <line x1="13" y1="0" x2="13" y2="25" stroke="#039be5" stroke-width="0.4"/>
+      <line x1="26" y1="0" x2="26" y2="25" stroke="#039be5" stroke-width="0.4"/>
+      <rect x="16" y="25" width="8" height="12" fill="#002a3d"/>
+    </g>
+
+    <g transform="translate(1320, 560)" opacity="0.7">
+      <line x1="8" y1="0" x2="8" y2="100" stroke="#004d1a" stroke-width="3"/>
+      <ellipse cx="8" cy="0" rx="3" ry="3" fill="#005c20"/>
+      <line x1="8" y1="0" x2="30" y2="-25" stroke="#00c853" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="8" y1="0" x2="-18" y2="-10" stroke="#00c853" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="8" y1="0" x2="8" y2="30" stroke="#00c853" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+  </svg>
+
+  <div class="drone-fly" style="font-size: 2.5rem;">🚁</div>
+
+  <div class="satellite" style="font-size: 1.4rem;">🛰️</div>
+
+  <div class="sparks" id="sparks"></div>
+
+  <div class="hero-year">2050</div>
+
+  <div class="hero-content">
+    <div class="badge">Visão do Futuro · Agronegócio</div>
+    <h1 class="hero-title">AGRO<br>DO FUTURO</h1>
+    <p class="hero-sub">
+      Imagine o campo em 2050 — onde inteligência artificial, robótica avançada
+      e natureza se fundem para alimentar 10 bilhões de pessoas
+      de forma sustentável e eficiente.
+    </p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <div style="padding:0.6rem 1.5rem;background:rgba(0,230,118,0.1);border:1px solid rgba(0,230,118,0.3);border-radius:8px;font-size:0.8rem;color:#00e676;letter-spacing:1px;">⚡ 95% eficiência energética</div>
+      <div style="padding:0.6rem 1.5rem;background:rgba(178,255,89,0.08);border:1px solid rgba(178,255,89,0.25);border-radius:8px;font-size:0.8rem;color:#b2ff59;letter-spacing:1px;">🌿 Zero emissão de carbono</div>
+      <div style="padding:0.6rem 1.5rem;background:rgba(105,240,174,0.08);border:1px solid rgba(105,240,174,0.25);border-radius:8px;font-size:0.8rem;color:#69f0ae;letter-spacing:1px;">🤖 Autonomia total das colheitas</div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Explore</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <span class="stat-big">300%</span>
+      <span class="stat-desc">Produtividade maior</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-big">-80%</span>
+      <span class="stat-desc">Uso de água</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-big">98%</span>
+      <span class="stat-desc">Automação das fazendas</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-big">10B</span>
+      <span class="stat-desc">Pessoas alimentadas</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-big">Zero</span>
+      <span class="stat-desc">Desperdício de alimentos</span>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div style="position:relative;z-index:2;">
+    <p class="section-label">Tecnologias do campo</p>
+    <h2 class="section-title">As Inovações que Vão<br>Transformar o Agro</h2>
+    <p class="section-desc">Da semente ao prato, cada etapa será guiada por dados, automação e inteligência em tempo real.</p>
+
+    <div class="cards-grid">
+
+      <div class="card" style="--card-color:#00e676;">
+        <div class="card-glow"></div>
+        <div class="card-icon-wrap">
+          <span class="card-icon" style="--icon-anim:bounce-icon;">🤖</span>
+          <div class="card-num">01</div>
+        </div>
+        <h3 class="card-title">Robôs Agrícolas</h3>
+        <p class="card-text">Máquinas autônomas que plantam, irrigam e colhem com precisão milimétrica. Sensores embarcados detectam doenças nas plantas antes que se alastrem.</p>
+        <div class="card-stat">
+          <span class="stat-val">24/7</span>
+          <span class="stat-label">Operação contínua</span>
+        </div>
+      </div>
+
+      <div class="card" style="--card-color:#69f0ae;">
+        <div class="card-glow" style="background:radial-gradient(circle,#69f0ae,transparent 70%)"></div>
+        <div class="card-icon-wrap" style="background:rgba(105,240,174,0.07);border-color:rgba(105,240,174,0.2);">
+          <span class="card-icon" style="--icon-anim:float-icon;">🚁</span>
+          <div class="card-num" style="background:#69f0ae;">02</div>
+        </div>
+        <h3 class="card-title">Drones Inteligentes</h3>
+        <p class="card-text">Frotas de drones mapeiam hectares em minutos, aplicam defensivos com precisão cirúrgica e transmitem dados em tempo real para a nuvem agrícola.</p>
+        <div class="card-stat">
+          <span class="stat-val" style="color:#69f0ae;">500ha</span>
+          <span class="stat-label">Monitorados por turno</span>
+        </div>
+      </div>
+
+      <div class="card" style="--card-color:#b2ff59;">
+        <div class="card-glow" style="background:radial-gradient(circle,#b2ff59,transparent 70%)"></div>
+        <div class="card-icon-wrap" style="background:rgba(178,255,89,0.07);border-color:rgba(178,255,89,0.2);">
+          <span class="card-icon" style="--icon-anim:pulse-icon;">🌿</span>
+          <div class="card-num" style="background:#b2ff59;">03</div>
+        </div>
+        <h3 class="card-title">Fazendas Verticais</h3>
+        <p class="card-text">Arranha-céus agrícolas nas cidades, com cultivo hidropônico e luz LED espectral. Sem chuva, sem solo, sem agrotóxicos — 365 dias de colheita.</p>
+        <div class="card-stat">
+          <span class="stat-val" style="color:#b2ff59;">40x</span>
+          <span class="stat-label">Mais produção por m²</span>
+        </div>
+      </div>
+
+      <div class="card" style="--card-color:#00bcd4;">
+        <div class="card-glow" style="background:radial-gradient(circle,#00bcd4,transparent 70%)"></div>
+        <div class="card-icon-wrap" style="background:rgba(0,188,212,0.07);border-color:rgba(0,188,212,0.2);">
+          <span class="card-icon" style="--icon-anim:pulse-icon;">🧠</span>
+          <div class="card-num" style="background:#00bcd4;">04</div>
+        </div>
+        <h3 class="card-title">IA Preditiva</h3>
+        <p class="card-text">Algoritmos treinados em bilhões de dados agrícolas preveem pragas, secas e preços com 95% de acurácia — tomando decisões automaticamente.</p>
+        <div class="card-stat">
+          <span class="stat-val" style="color:#00bcd4;">95%</span>
+          <span class="stat-label">Acurácia nas previsões</span>
+        </div>
+      </div>
+
+      <div class="card" style="--card-color:#e040fb;">
+        <div class="card-glow" style="background:radial-gradient(circle,#e040fb,transparent 70%)"></div>
+        <div class="card-icon-wrap" style="background:rgba(224,64,251,0.07);border-color:rgba(224,64,251,0.2);">
+          <span class="card-icon" style="--icon-anim:shake-icon;">💧</span>
+          <div class="card-num" style="background:#e040fb;">05</div>
+        </div>
+        <h3 class="card-title">Irrigação de Precisão</h3>
+        <p class="card-text">Sensores de umidade molecular no solo combinados com satélites calculam a gota exata necessária para cada planta, eliminando o desperdício hídrico.</p>
+        <div class="card-stat">
+          <span class="stat-val" style="color:#e040fb;">-87%</span>
+          <span class="stat-label">Menos água usada</span>
+        </div>
+      </div>
+
+      <div class="card" style="--card-color:#ffca28;">
+        <div class="card-glow" style="background:radial-gradient(circle,#ffca28,transparent 70%)"></div>
+        <div class="card-icon-wrap" style="background:rgba(255,202,40,0.07);border-color:rgba(255,202,40,0.2);">
+          <span class="card-icon" style="--icon-anim:float-icon;">🌆</span>
+          <div class="card-num" style="background:#ffca28;color:#000;">06</div>
+        </div>
+        <h3 class="card-title">Cidades Sustentáveis</h3>
+        <p class="card-text">Metrópoles integradas com bioarquitetura, jardins urbanos e redes de distribuição que conectam produtor ao consumidor em menos de 24 horas.</p>
+        <div class="card-stat">
+          <span class="stat-val" style="color:#ffca28;">2h</span>
+          <span class="stat-label">Da colheita ao mercado</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="timeline-section">
+  <p class="section-label">Linha do tempo</p>
+  <h2 class="section-title" style="margin-bottom:0.8rem;">O Caminho até 2050</h2>
+  <p class="section-desc" style="margin-bottom:3rem;">Cada década traz um salto tecnológico que redefine como o Brasil e o mundo produzem alimentos.</p>
+
+  <div class="timeline">
+
+    <div class="tl-item">
+      <div class="tl-box">
+        <p class="tl-year">2025 — 2030</p>
+        <h3 class="tl-title">🌱 Digitalização total do campo</h3>
+        <p class="tl-text">Sensores IoT em 80% das grandes fazendas. Plataformas de dados agrícolas consolidadas. Primeiros robôs autônomos de colheita em escala comercial.</p>
+      </div>
+      <div class="tl-dot"></div>
+      <div style="flex:1;max-width:44%;"></div>
+    </div>
+
+    <div class="tl-item">
+      <div style="flex:1;max-width:44%;"></div>
+      <div class="tl-dot"></div>
+      <div class="tl-box">
+        <p class="tl-year">2030 — 2038</p>
+        <h3 class="tl-title">🤖 Era dos robôs colaborativos</h3>
+        <p class="tl-text">Frotas de robôs autônomos substituem maquinário pesado. Fazendas operam com equipes mínimas. IA gerencia logística e previsões climáticas com precisão.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-box">
+        <p class="tl-year">2038 — 2045</p>
+        <h3 class="tl-title">🛰️ Agricultura espacial e orbital</h3>
+        <p class="tl-text">Satélites de nova geração monitoram cada metro quadrado. Primeiras experiências de cultivo em órbita e bases lunares. DNA de culturas editado para resistência extrema.</p>
+      </div>
+      <div class="tl-dot"></div>
+      <div style="flex:1;max-width:44%;"></div>
+    </div>
+
+    <div class="tl-item">
+      <div style="flex:1;max-width:44%;"></div>
+      <div class="tl-dot"></div>
+      <div class="tl-box">
+        <p class="tl-year">2045 — 2050</p>
+        <h3 class="tl-title">🌍 Abundância alimentar global</h3>
+        <p class="tl-text">Fome erradicada. Fazendas verticais em todas as grandes cidades. Sistemas biossintéticos produzem proteínas sem terra ou água. O agro é completamente carbono negativo.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-logo">🌾 AGRO 2050</div>
+  <p class="footer-text">O futuro do campo começa hoje · Brasil · Visão Tecnológica</p>
+  <p style="margin-top:1rem;font-size:0.7rem;color:rgba(100,200,130,0.2);letter-spacing:2px;">PLANTANDO O AMANHÃ · COLHENDO O IMPOSSÍVEL</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
